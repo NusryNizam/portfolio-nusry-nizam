@@ -1,0 +1,26 @@
+.section-two {
+  height: auto;
+  scroll-margin-block-start: 2rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-container > * {
+  flex: 1;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.drawer {
+  background: var(--background);
+  color: var(--light)
+  ;border: 1px solid #222222;
+}

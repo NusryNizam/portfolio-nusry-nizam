@@ -1,0 +1,48 @@
+---
+import '@/styles/globals.css'
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.tsx";
+import SectionOne from "../sections/SectionOne.tsx";
+import SectionTwo from "../sections/SectionTwo.tsx";
+import SectionThree from "../sections/SectionThree.tsx";
+import Footer from "../components/Footer.tsx";
+---
+
+<Layout>
+  <main>
+    <Navbar />
+    <SectionOne />
+    <SectionTwo client:load />
+    <SectionThree />
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  html {
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-type: proximity; */
+  }
+  main {
+    margin: auto;
+    max-width: calc(1600px);
+    color: var(--light);
+    font-family: "Hubot";
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 1200px) {
+    main {
+      padding: 1.5rem;
+      padding-bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1em;
+  }
+</style>

@@ -1,0 +1,24 @@
+.footer {
+  background-color: #161616;
+  color: var(--light);
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  animation: slideUp 400ms 100ms ease-in;
+
+}
+
+.footer-content {
+  margin: auto;
+  max-width: calc(1600px);
+  color: var(--light);
+  font-family: "Hubot";
+  padding: 1rem;
+  font-weight: bold;
+  color: #535353;
+}
+
+@keyframes slideUp {
+  0% {
+    translate: 0 50px;
+  }
+}

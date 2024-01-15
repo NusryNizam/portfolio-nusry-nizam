@@ -1,0 +1,33 @@
+
+
+/* custom styles */
+
+:root {
+  --accent: #ff4400;
+  --background: #101010;
+  --secondary: #6DC8E9;
+  --light: #ffffff;
+}
+html {
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Hubot';
+  src: url('/fonts/Hubot-Sans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Dela';
+  src: url('/fonts/DelaGothicOne-Regular.ttf');
+}
