@@ -4,9 +4,10 @@
 }
 
 .card-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-auto-flow: row;
 }
 
 .card-container > * {
@@ -19,8 +20,14 @@
   font-size: 1.125rem;
 }
 
-.drawer {
-  background: var(--background);
-  color: var(--light)
-  ;border: 1px solid #222222;
+@media (max-width: 1280px) {
+  .card-container {
+    grid-template-columns: repeat(2, minmax(40%, 300px));
+  }
+}
+
+@media (max-width: 640px) {
+  .card-container {
+    grid-template-columns: repeat(1, minmax(100%, 400px));
+  }
 }

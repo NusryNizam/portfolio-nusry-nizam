@@ -3,6 +3,45 @@
   background-color: var(--secondary);
   min-width: 300px;
   aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.card.overlay {
+  background-color: rgb(0 0 0 / 90%);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  inset: 0;
+}
+
+.card-info {
+  background: white;
+  margin-top: auto;
+  text-align: left;
+  box-shadow: 0px -3px 8px rgb(0 0 0 / 4%) ;
+  padding:  1rem;
+
+}
+
+.card-title {
+  margin-top: auto;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 0.25rem;
+}
+
+.card-description {
+  color: rgb(75, 75, 75);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .card:hover {
@@ -17,4 +56,74 @@
   50% {
     rotate: 1deg;
   }
+}
+
+.sheet {
+  background: var(--background);
+  color: var(--light);
+  border: 1px solid #222222;
+}
+
+.carousel {
+  max-width: 100%;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.carousel-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(58, 58, 58);
+  max-width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-inline: 1rem;
+}
+
+.carousel-image {
+}
+
+.sheet-footer {
+  padding-top: 1rem;
+}
+
+.dismiss-btn {
+  background-color: var(--light);
+  padding: 0.5rem 2rem;
+  border:none;
+  color: black;
+  border-radius: 6px;
+  font-family: 'Hubot';
+  font-weight: 500;
+  display: none;
+}
+
+.dismiss-btn:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.dismiss-btn:active {
+  background-color: rgb(190, 190, 190);
+}
+
+@media (max-width: 768px) {
+  .dismiss-btn {
+    width: 94%;
+    display: inline;
+  }
+  
+  .sheet-footer {
+
+  }
+}
+
+@media (max-width:640px) {
+  .card {
+    aspect-ratio: 1.5;
+  }
+  
 }
