@@ -22,68 +22,53 @@ import {
 type CardProps = {
   title: string;
   description: string;
+  coverImage: string[];
+  screenshots: string[];
 };
 
-const Card = ({ title, description }: CardProps) => {
+const Card = ({ title, description, coverImage, screenshots }: CardProps) => {
+  const srcset = `${coverImage[0]} 640w, ${coverImage[1]} 800w`;
+  const sizes = "(max-width: 640px) 100vw, 100vw";
+
   return (
     <Sheet>
       <SheetTrigger>
-        <div
-          className="card"
-          style={{ backgroundImage: `url(/images/onboarding.webp)` }}
-        >
+        <div className="card">
+          <img
+            src={coverImage[1]}
+            alt={title}
+            srcSet={srcset}
+            sizes={sizes}
+            className="card-image"
+          />
           <div className="card-info">
-            <h3 className="card-title">Recipe App</h3>
-            <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              quibusdam pariatur obcaecati!
-            </p>
+            <h3 className="card-title">{title}</h3>
+            <p className="card-description">{description}</p>
           </div>
-          <div className="overlay"></div>
         </div>
       </SheetTrigger>
 
       <SheetContent className="sheet" side={"bottom"}>
         <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
+          <SheetTitle className="sheet-title">Recipe App</SheetTitle>
 
-          <SheetDescription className="sm:px-9 md:px-20 xl:px-40 ">
-            <Carousel className="carousel">
-              <CarouselContent className="carousel-content -ml-0">
-                <CarouselItem className="carousel-item sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
-                  <img
-                    src="/images/onboarding.webp"
-                    className="carousel-image"
-                  />
+          <Carousel className="carousel">
+            <CarouselContent className="carousel-content -ml-0">
+              {screenshots.map((src) => (
+                <CarouselItem
+                  key={src}
+                  className="carousel-item sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                >
+                  <img src={src} className="carousel-image" />
                 </CarouselItem>
-                <CarouselItem className="carousel-item  sm:basis-1/1  md:basis-1/2 lg:basis-1/3">
-                  <img
-                    src="/images/onboarding.webp"
-                    className="carousel-image"
-                  />
-                </CarouselItem>
-                <CarouselItem className="carousel-item  sm:basis-1/1  md:basis-1/2 lg:basis-1/3">
-                  <img
-                    src="/images/onboarding.webp"
-                    className="carousel-image"
-                  />
-                </CarouselItem>
-                <CarouselItem className="carousel-item  sm:basis-1/1  md:basis-1/2 lg:basis-1/3">
-                  <img
-                    src="/images/onboarding.webp"
-                    className="carousel-image"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </SheetDescription>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
 
           <SheetFooter className="sheet-footer">
-            <SheetClose>
-              <button className="dismiss-btn">Dismiss</button>
-            </SheetClose>
+            <SheetClose className="dismiss-btn">Dismiss</SheetClose>
           </SheetFooter>
         </SheetHeader>
       </SheetContent>
