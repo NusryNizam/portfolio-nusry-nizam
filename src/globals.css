@@ -1,11 +1,9 @@
-
-
 /* custom styles */
 
 :root {
   --accent: #ff4400;
   --background: #101010;
-  --secondary: #6DC8E9;
+  --secondary: #6dc8e9;
   --light: #ffffff;
 }
 html {
@@ -24,11 +22,11 @@ p {
 }
 
 @font-face {
-  font-family: 'Hubot';
-  src: url('/fonts/Hubot-Sans.woff2') format('woff2');
+  font-family: "Hubot";
+  src: url("/fonts/Hubot-Sans.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Dela';
-  src: url('/fonts/DelaGothicOne-Regular.ttf');
+  font-family: "Dela";
+  src: url("/fonts/DelaGothicOne-Regular.ttf");
 }

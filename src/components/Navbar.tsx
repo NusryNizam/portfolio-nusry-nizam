@@ -1,10 +1,10 @@
-import './Navbar.css';
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navigation">
       <div className="logo">
-        <img src={'/logo.svg'} />
+        <img src={"/logo.svg"} />
       </div>
       <div className="nav-links">
         <a href="#home">HOME</a>

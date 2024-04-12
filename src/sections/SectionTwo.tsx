@@ -1,6 +1,6 @@
-import "./SectionTwo.css";
-import Card from "../components/Card.tsx";
 import { images } from "@/images.ts";
+import Card from "../components/Card.tsx";
+import "./SectionTwo.css";
 
 const SectionTwo = () => {
   return (

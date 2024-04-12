@@ -1,44 +1,43 @@
 .logo {
-    display: grid;
-    align-content: center;
-    aspect-ratio: 1;
-    height: 2rem;
-    width: 2rem;
+  display: grid;
+  align-content: center;
+  aspect-ratio: 1;
+  height: 2rem;
+  width: 2rem;
 }
 
 #logo {
-    fill: var(--accent);
-    color: var(--accent);
-    fill: #ff4400;
+  fill: var(--accent);
+  color: var(--accent);
+  fill: #ff4400;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .logo svg {
-    width: 100%;
-    max-height: 2rem;
-    aspect-ratio: 1;
-    padding-block: 1rem;
+  width: 100%;
+  max-height: 2rem;
+  aspect-ratio: 1;
+  padding-block: 1rem;
 }
 
 .nav-links {
-    margin-left: 1rem;
-    display: flex;
-    gap: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-links a:hover {
-    font-weight: bold;
-    transition: 100ms;
+  font-weight: bold;
+  transition: 100ms;
 }
 
 .nav-links a {
-    color: var(--light);
-    text-decoration: none;
+  color: var(--light);
+  text-decoration: none;
 }

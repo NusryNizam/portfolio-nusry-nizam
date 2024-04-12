@@ -106,7 +106,11 @@ const SectionThree = () => {
               </g>
             </svg>
           </a> */}
-          <div className="email">Email me at:<br /><span>nusry@pm.me</span></div>
+          <div className="email">
+            Email me at:
+            <br />
+            <span>nusry@pm.me</span>
+          </div>
         </div>
       </div>
     </section>

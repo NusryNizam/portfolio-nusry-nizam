@@ -10,7 +10,6 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
-
 }
 
 .card.overlay {
@@ -31,8 +30,8 @@
   backdrop-filter: blur(15px);
   margin-top: auto;
   text-align: left;
-  box-shadow: 0px -3px 8px rgb(0 0 0 / 4%) ;
-  padding:  1rem;
+  box-shadow: 0px -3px 8px rgb(0 0 0 / 4%);
+  padding: 1rem;
 }
 
 .card-title {
@@ -73,7 +72,7 @@
 
 .sheet-title {
   color: var(--light);
-  font-family: 'Hubot';
+  font-family: "Hubot";
   padding-bottom: 1rem;
 }
 
@@ -109,10 +108,10 @@
 .dismiss-btn {
   background-color: var(--light);
   padding: 0.5rem 2rem;
-  border:none;
+  border: none;
   color: black;
   border-radius: 6px;
-  font-family: 'Hubot';
+  font-family: "Hubot";
   font-weight: 500;
   display: none;
 }
@@ -135,9 +134,8 @@
   }
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .card {
     aspect-ratio: 1.5;
   }
-  
 }

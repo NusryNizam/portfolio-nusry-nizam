@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  /* outline: 1px solid red; */
   min-height: 80dvh;
   gap: 4rem;
 }

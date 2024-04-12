@@ -189,7 +189,7 @@ const SectionOne = () => {
         </div>
       </div>
       <div className="right-half">
-        <h1 className="tagline" >
+        <h1 className="tagline">
           I LOVE CRAFTING AWESOME DIGITAL EXPERIENCES.
         </h1>
       </div>
